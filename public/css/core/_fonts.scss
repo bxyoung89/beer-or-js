@@ -1,5 +1,11 @@
-
-
 @mixin main-font {
-	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-family: 'Titillium Web', Verdana, Helvetica, Arial, sans-serif;
+}
+
+@mixin beer-font {
+	font-family: 'Germania One', cursive;
+}
+
+@mixin code-font {
+	font-family: 'Cutive Mono', monospace;
 }

@@ -33,3 +33,8 @@
 	width: $diameter;
 	border-radius: 50%;
 }
+
+@mixin uppercase(){
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}

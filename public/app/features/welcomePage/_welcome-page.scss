@@ -1,0 +1,48 @@
+.welcome-page {
+	background: $blue;
+	color: $white;
+	height: 100%;
+}
+
+.welcome-page-title {
+	@include font-size(7.2);
+	padding: 20px 20px 20px 100px;
+	height: 150px;
+}
+
+.welcome-page-title-beer {
+	@include beer-font();
+	color: $orange;
+}
+
+.welcome-page-title-javascript {
+	@include code-font();
+	font-weight: bold;
+	color: $orange;
+}
+
+.welcome-page-body {
+	@include font-size(2.8);
+	line-height: 60px;
+	height: calc(100% - 400px);
+	padding: 20px 100px 20px 300px;
+	color: $light-orange-grey;
+}
+
+.welcome-page-link-wrapper {
+	@include clearfix();
+	padding: 20px 100px 20px 20px;
+	height: 250px;
+}
+
+.welcome-page-link {
+	@include font-size(4.8);
+	@include uppercase();
+	float: right;
+	color: $orange;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

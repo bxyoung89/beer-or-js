@@ -12,7 +12,7 @@ angular.module("app/features/questionsPage/questionsPage.html", []).run(["$templ
 
 angular.module("app/features/welcomePage/welcomePage.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("app/features/welcomePage/welcomePage.html",
-    "<div class=welcome-page>Hello!</div>");
+    "<div class=welcome-page><div class=welcome-page-title><span class=welcome-page-title-beer>BEER</span> or <span class=welcome-page-title-javascript>Javascript</span>?</div><div class=welcome-page-body>Waddup playas? I know you been trackin all these wack names for brews, code, and other shit. Time to test yo knowledge son! See how many of these dope rhymes you can kick to prove yo'self as true lover of brew and code!</div><div class=welcome-page-link-wrapper><a class=welcome-page-link href=#/questions>Let's Get Started!</a></div></div>");
 }]);
 
 angular.module("BeerOrJS", ["Templates", "ngRoute"])
