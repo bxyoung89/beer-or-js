@@ -1,0 +1,23 @@
+.done-page {
+	background: $blue;
+	color: $white;
+	height: 100%;
+}
+
+.done-page-title {
+	@include font-size(7.2);
+	padding: 20px 20px 20px 100px;
+	height: 150px;
+
+	> span {
+		color: $orange;
+	}
+}
+
+.done-page-body {
+	@include font-size(2.8);
+	line-height: 60px;
+	height: calc(100% - 150px);
+	padding: 20px 100px 20px 300px;
+	color: $light-orange-grey;
+}

@@ -1,0 +1,58 @@
+.question-answer {
+	background: $blue;
+	color: $white;
+	padding: 10px;
+
+}
+
+.question-answer-header {
+	@include font-size(3.6);
+}
+
+.question-answer-link {
+	color: $orange;
+	display: block;
+	margin-top: -10px;
+	margin-bottom: 20px;
+
+}
+
+.question-answer-content {
+	@include clearfix();
+	color:$orange-grey;
+}
+
+.question-answer-description {
+	float: left;
+	width: 50%;
+}
+
+.question-answer-image {
+	float: left;
+	width: 50%;
+
+	> img {
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.question-answer-button {
+	@include uppercase();
+	@include font-size(2.4);
+	padding: 0 10px;
+	margin-top: 100px;
+	width: 100%;
+	background: $orange;
+	color: $white;
+	border: none;
+
+	&:hover {
+		background: mix($orange, $white, 80%);
+	}
+
+	&:focus {
+		outline: none;
+	}
+}

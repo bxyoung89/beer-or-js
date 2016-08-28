@@ -1,0 +1,24 @@
+<div class="question-answer">
+	<div class="question-answer-header">
+		{{data.name}}
+	</div>
+	<a class="question-answer-link" href="{{data.link}}" target="_blank">
+		Website
+	</a>
+	<div class="question-answer-content">
+		<div class="question-answer-description">
+			{{data.description}}
+		</div>
+		<div class="question-answer-image">
+			<img ng-src="{{data.image}}">
+		</div>
+	</div>
+	<button class="question-answer-button" ng-click="nextClick()">
+		<span ng-if="isLastQuestion">
+			Done
+		</span>
+		<span ng-if="!isLastQuestion">
+			Next
+		</span>
+	</button>
+</div>

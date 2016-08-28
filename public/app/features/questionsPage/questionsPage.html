@@ -1,3 +1,28 @@
-<div class="questions-page">
-	You will answer my questions
+<div class="questions-page" >
+	<div class="question-page-section question-page-beer-section" style="background-image: url('public/images/beer.jpg')" ng-class="{'answered': answered, 'correct': currentQuestion.isBeer}">
+		<div class="question-page-section-title">
+			BEER
+		</div>
+		<div class="question-page-section-answer-wrapper" ng-if="answered && currentQuestion.isBeer">
+			<question-answer data-data="currentQuestion" is-last-question="isLastQuestion" next-click="nextClick" ></question-answer>
+		</div>
+
+		<button class="question-page-section-button" ng-click="chooseBeer()" ng-if="!answered">
+
+		</button>
+	</div>
+	<div class="question-page-section question-page-javascript-section" style="background-image: url('public/images/javascript.jpg')" ng-class="{'answered': answered, 'correct': currentQuestion.isJS}">
+		<div class="question-page-section-title">
+			Javascript
+		</div>
+		<div class="question-page-section-answer-wrapper" ng-if="answered && currentQuestion.isJS">
+			<question-answer data-data="currentQuestion" is-last-question="isLastQuestion" next-click="nextClick" ></question-answer>
+		</div>
+		<button class="question-page-section-button" ng-click="chooseJavascript()" ng-if="!answered">
+
+		</button>
+	</div>
+	<div class="question-page-name" ng-if="!answered">
+		What is <span>{{currentQuestion.name}}</span>?
+	</div>
 </div>
