@@ -2,9 +2,25 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Title</title>
+		<title>Beer or JS</title>
+
+		<link rel="apple-touch-icon" sizes="152x152" href="/public/images/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="/public/images/favicon/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/public/images/favicon/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/public/images/favicon/manifest.json">
+		<link rel="mask-icon" href="/public/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
-		Hello Beer Or JS!
+		<body ng-app="BeerOrJS">
+
+			<div class="page-wrapper" ng-view>
+
+			</div>
+
+			<link rel="stylesheet" href="public/bin/css/style.css">
+			<script src="public/bin/js/lib.js"></script>
+			<script src="public/bin/js/beerOrJS.js"></script>
+		</body>
 	</body>
 </html>

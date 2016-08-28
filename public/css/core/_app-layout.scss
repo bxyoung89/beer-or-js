@@ -1,0 +1,16 @@
+*, *:before, *:after { box-sizing: border-box; }
+
+html {
+	@include main-font();
+	font-size: 62.5%;
+	color: $off-black;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+body{
+	@include font-size(1.6);
+	height: 100%;
+	width: 100%;
+}
